@@ -8,6 +8,7 @@
   <!--列表-->
   <div>
     <el-menu
+      style="overflow: auto;"
       default-active="1"
       class="el-menu-vertical-demo"
       :unique-opened=true
@@ -22,15 +23,20 @@
 
 <script>
   import MenuTree from './MenuTree'
-
+  import store from '@/store'
+  import { mapState } from 'vuex'
   export default {
     components:{
       MenuTree,
     },
     data(){
       return {
-        navTree:''
       }
+    },
+    computed:{
+      ...mapState({
+        navTree: state=>state.navTree
+      })
     },
     methods: {
       handleOpen(key, keyPath) {
@@ -41,10 +47,6 @@
       }
     },
     mounted() {
-      setTimeout(()=>{
-        let listTree = sessionStorage.getItem('ListTree')
-        this.navTree = JSON.parse(listTree)
-      },200)
 
     }
   }
@@ -56,14 +58,26 @@
     left: 0;
     bottom: 0;
     z-index: 1040;
-    .logo{
+    .el-menu {
+      position:absolute;
+      top: 60px;
+      bottom: 0px;
+      text-align: left;
+      // background-color: #2968a30c;
       width: 210px
-      height: 60px
+    }
+    .logo{
+      position:absolute;
+      top: 0px;
+      height: 60px;
+      line-height: 60px;
+      cursor:pointer;
+      color: #fff;
+      background: rgb(9, 60, 144)
+      width: 210px
       display flex
       align-items center
       justify-content center
-      background: rgb(9, 60, 144)
-      color: #fff
       >div{
         width: 180px
       }

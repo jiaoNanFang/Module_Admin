@@ -4,6 +4,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import api from '@/api/api'
+import store from '@/store'
+
 /**
  * 注册路由
  */
@@ -54,18 +56,18 @@ router.beforeEach((to, from, next) => {
  * 加载动态菜单和路由
  */
 function addDynamicMenuAndRoutes(userName, to, from) {
-  // let listDatas = sessionStorage.getItem('ListTree')
-  // if(listDatas) {
-  //   // console.log('动态菜单和路由已经存在.')
-  //   return
-  // }
+  if(store.state.navFlag) {
+     // console.log('动态菜单和路由已经存在.')
+    return
+  }
   api.mock.findListTree() .then(res => {
     if(res.code == '000000'){
       let dynamicRoutes = addDynamicRoutes(res.list)
       // 处理静态组件绑定路由
       handleStaticComponent(router, dynamicRoutes)
       router.addRoutes(router.options.routes)
-      sessionStorage.setItem('ListTree', JSON.stringify(res.list))
+      store.commit('TreeListFlag',true)
+      store.commit('TreeListData',res.list)
     }
   })
 }
