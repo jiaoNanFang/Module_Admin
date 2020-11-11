@@ -79,7 +79,10 @@
       align-items center
       justify-content center
       >div{
-        width: 180px
+        width: 100%
+        display flex
+        align-items center
+        justify-content center
       }
     }
   }

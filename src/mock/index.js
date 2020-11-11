@@ -24,7 +24,7 @@ const data={
           id: 11,
           name: "父传子",
           parentId: 10,
-          url:"/dataPass/index",
+          url:"/dataPass/FatherToSon",
           perms: "",
           type: 1,
           icon: "el-icon-office-building",
@@ -36,15 +36,15 @@ const data={
         },
         {
           id: 12,
-          name: "组件传参2",
+          name: "子传父",
           parentId: 10,
-          url: "/tags/hostpitalTags",
+          url: "/dataPass/SonToFather",
           perms: "",
           type: 1,
           icon: "el-icon-office-building",
           orderNum: 10,
           delFlag: 0,
-          parentName: "医院管理",
+          parentName: "组件传参",
           level: 1,
           children: []
         }
