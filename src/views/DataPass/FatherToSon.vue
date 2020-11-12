@@ -42,11 +42,22 @@
         </el-form-item>
       </el-form>
     </el-row>
+    <el-divider></el-divider>
+
+    <!--第四种-->
+    <el-row class="rowStyle">
+      <el-tag type="warning" style="margin-bottom: 20px">第四种 隔代传递</el-tag>
+      <el-form>
+        <el-form-item>
+          <el-col :span="8">
+            <el-input v-model="data_dome4" type="text" placeholder="请输入内容"></el-input>
+            <Dome4 :dome_4="data_dome4" @handleShowClick="handleShowClick"/>
+          </el-col>
+        </el-form-item>
+      </el-form>
+    </el-row>
 
     <el-divider>待补充</el-divider>
-    <el-row class="rowStyle">
-      <el-tag type="warning">标签四</el-tag>
-    </el-row>
     <el-row class="rowStyle">
       <el-tag type="danger">标签五</el-tag>
     </el-row>
@@ -58,23 +69,29 @@
   import Dome1 from './FatherToSonDome/Dome1'
   import Dome2 from './FatherToSonDome/Dome2'
   import Dome3 from './FatherToSonDome/Dome3'
+  import Dome4 from './FatherToSonDome/Dome4'
   export default {
     name: "Index",
     components:{
       Dome1,
       Dome2,
       Dome3,
+      Dome4,
     },
     data(){
       return {
         data_dome1:'',
         data_dome2:'',
         data_dome3:'',
+        data_dome4:'',
       }
     },
     methods:{
       handleClickDome3(){
         this.data_dome3 += 'I'
+      },
+      handleShowClick(data){
+        this.data_dome4 = data
       }
     }
   }
