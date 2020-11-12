@@ -45,9 +45,23 @@ const data={
           orderNum: 10,
           delFlag: 0,
           parentName: "组件传参",
-          level: 1,
+          level: 2,
           children: []
-        }
+        },
+        {
+          id: 13,
+          name: "插槽",
+          parentId: 10,
+          url: "/dataPass/SlotPage",
+          perms: "",
+          type: 1,
+          icon: "el-icon-bell",
+          orderNum: 10,
+          delFlag: 0,
+          parentName: "组件传参",
+          level: 3,
+          children: []
+        },
       ]
     },
   ],

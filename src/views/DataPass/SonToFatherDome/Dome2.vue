@@ -20,7 +20,8 @@
     },
     data(){
       return {
-        love:'I HATE YOU'
+        love:'I HATE YOU',
+        val:''
       }
     },
    methods:{
@@ -41,7 +42,9 @@
      handleClick(){
        this.$parent.getDataOne(this.love)
      }
-   }
+   },
+    mounted(){
+    }
   }
 </script>
 <style scoped>

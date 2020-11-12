@@ -86,6 +86,9 @@
         this.data_dome3.name = data.name
       },
     },
+    mounted(){
+
+    },
   }
 </script>
 <style scoped>

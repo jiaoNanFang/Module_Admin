@@ -15,9 +15,7 @@
 <script>
   export default {
     name: "Dome1",
-    props:{
-      getData: Function
-    },
+
     data(){
       return {
         love:'I LOVE YOU'
@@ -27,7 +25,13 @@
      handleClick(){
        this.$emit('getData',this.love)
      }
-   }
+   },
+    mounted(){
+      //自己监听当前实例的自定义getData事件
+      this.$on( 'getData',function(val){
+        console.log( '我是子组件dome1'+val );
+      } );
+    }
   }
 </script>
 <style scoped>
