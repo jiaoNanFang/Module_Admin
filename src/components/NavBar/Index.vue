@@ -57,7 +57,7 @@
     top: 0px;
     left: 0;
     bottom: 0;
-    z-index: 1040;
+    z-index: 1020;
     .el-menu {
       position:absolute;
       top: 60px;
@@ -73,11 +73,11 @@
       line-height: 60px;
       cursor:pointer;
       color: #fff;
-      background: rgb(9, 60, 144)
       width: 210px
       display flex
       align-items center
       justify-content center
+      background: rgb(9, 60, 144)
       >div{
         width: 100%
         display flex

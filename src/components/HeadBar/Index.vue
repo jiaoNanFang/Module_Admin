@@ -72,23 +72,21 @@
   .headbar {
     position: fixed;
     top: 0;
-    right 0
+    right 0;
+    left:210px
     z-index: 1030;
     height: 60px;
-    width:100%
     line-height: 60px;
     border-color: rgba(180, 190, 190, 0.8);
     border-left-width: 1px;
     border-left-style: solid;
     background: rgb(9, 60, 144)
     .header{
-      /*padding 0 20px*/
-      margin-left 210px;
+      padding 0 10px
       display flex
       align-items center
       justify-content space-between
       .left_div, .right_div{
-
       }
     }
   }
