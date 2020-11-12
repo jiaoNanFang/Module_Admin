@@ -55,9 +55,9 @@
 </template>
 
 <script>
-  import Dome1 from './OneDome/Dome1'
-  import Dome2 from './OneDome/Dome2'
-  import Dome3 from './OneDome/Dome3'
+  import Dome1 from './FatherToSonDome/Dome1'
+  import Dome2 from './FatherToSonDome/Dome2'
+  import Dome3 from './FatherToSonDome/Dome3'
   export default {
     name: "Index",
     components:{

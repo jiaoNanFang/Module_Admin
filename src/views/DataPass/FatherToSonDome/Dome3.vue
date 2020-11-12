@@ -1,8 +1,5 @@
 <template>
   <div>
-    <el-row>
-
-    </el-row>
     <el-form>
       <el-form-item>
         <el-col>
