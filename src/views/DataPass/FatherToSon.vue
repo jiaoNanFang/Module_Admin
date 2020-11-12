@@ -56,6 +56,21 @@
         </el-form-item>
       </el-form>
     </el-row>
+    <el-divider></el-divider>
+
+    <!--第五种-->
+    <el-row class="rowStyle">
+      <el-tag type="danger" style="margin-bottom: 20px">第五种 provide / inject</el-tag>
+      <el-form>
+        <el-form-item>
+          <el-col :span="8">
+            <el-input v-model="data_dome5.name" type="text" placeholder="请输入内容"></el-input>
+            <Dome5 />
+          </el-col>
+        </el-form-item>
+      </el-form>
+    </el-row>
+
 
     <el-divider>待补充</el-divider>
     <el-row class="rowStyle">
@@ -70,6 +85,7 @@
   import Dome2 from './FatherToSonDome/Dome2'
   import Dome3 from './FatherToSonDome/Dome3'
   import Dome4 from './FatherToSonDome/Dome4'
+  import Dome5 from './FatherToSonDome/Dome5'
   export default {
     name: "Index",
     components:{
@@ -77,6 +93,7 @@
       Dome2,
       Dome3,
       Dome4,
+      Dome5,
     },
     data(){
       return {
@@ -84,6 +101,14 @@
         data_dome2:'',
         data_dome3:'',
         data_dome4:'',
+        data_dome5:{
+          name:''
+        },
+      }
+    },
+    provide() {
+      return {
+        parent:this.data_dome5
       }
     },
     methods:{
