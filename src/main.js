@@ -10,6 +10,9 @@ import './mock/index'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'font-awesome/css/font-awesome.min.css'
 
+import Treeselect from '@riophae/vue-treeselect'
+import '@riophae/vue-treeselect/dist/vue-treeselect.css'
+Vue.component('Treeselect',Treeselect)
 
 
 Vue.use(ElementUI)

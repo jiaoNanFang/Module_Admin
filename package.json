@@ -12,6 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@riophae/vue-treeselect": "^0.4.0",
     "axios": "^0.19.2",
     "cropperjs": "^1.5.7",
     "element-ui": "^2.13.2",

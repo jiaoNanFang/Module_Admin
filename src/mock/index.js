@@ -9,7 +9,7 @@ const data={
   list: [
     {
       id: 10,
-      name: "组件传参",
+      name: "Vue组件传参",
       parentId: 0,
       url: "",
       perms: "",
@@ -62,6 +62,35 @@ const data={
           level: 3,
           children: []
         },
+      ]
+    },
+    {
+      id: 20,
+      name: "JS基础",
+      parentId: 0,
+      url: "",
+      perms: "",
+      type: 0,
+      icon: "el-icon-menu",
+      orderNum: 20,
+      delFlag: 0,
+      parentName: null,
+      level: 0,
+      children:[
+        {
+          id: 21,
+          name: "执行上下文/作用域",
+          parentId: 10,
+          url:"/jsModule/zuoYongYu",
+          perms: "",
+          type: 1,
+          icon: "el-icon-bell",
+          orderNum: 0,
+          delFlag: 0,
+          parentName: "执行上下文/作用域",
+          level: 1,
+          children: []
+        }
       ]
     },
   ],
