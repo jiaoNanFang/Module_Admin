@@ -93,6 +93,49 @@ const data={
         }
       ]
     },
+    {
+      id: 30,
+      name: "TypeScript",
+      parentId: 0,
+      url: "",
+      perms: "",
+      type: 0,
+      icon: "el-icon-menu",
+      orderNum: 20,
+      delFlag: 0,
+      parentName: null,
+      level: 0,
+      children: [
+        {
+          id: 31,
+          name: "认识TypeScript",
+          parentId: 30,
+          url:"/TypeScript/Introduction",
+          perms: "",
+          type: 1,
+          icon: "el-icon-bell",
+          orderNum: 0,
+          delFlag: 0,
+          parentName: "组件传参",
+          level: 1,
+          children: []
+        },
+        {
+          id: 32,
+          name: "TypeScript特性",
+          parentId: 30,
+          url:"/TypeScript/Features",
+          perms: "",
+          type: 1,
+          icon: "el-icon-bell",
+          orderNum: 0,
+          delFlag: 0,
+          parentName: "组件传参",
+          level: 1,
+          children: []
+        },
+      ]
+    },
   ],
 };
 
