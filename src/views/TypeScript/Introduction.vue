@@ -1,5 +1,8 @@
 <template>
   <div class="TypeScript">
+    <a  target="_blank" href="https://ts.xcatliu.com/">学习网站</a>
+    <el-divider></el-divider>
+
     <!--介绍-->
     <el-row class="rowStyle">
       <el-tag style="margin-bottom: 20px">js和ts的区别</el-tag>
