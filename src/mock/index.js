@@ -136,6 +136,35 @@ const data={
         },
       ]
     },
+    {
+      id: 999,
+      name: "代码试验区",
+      parentId: 0,
+      url: "",
+      perms: "",
+      type: 0,
+      icon: "el-icon-menu",
+      orderNum: 20,
+      delFlag: 0,
+      parentName: null,
+      level: 0,
+      children: [
+        {
+          id: 9991,
+          name: "试验",
+          parentId: 999,
+          url:"/Demo/Demo1",
+          perms: "",
+          type: 1,
+          icon: "el-icon-bell",
+          orderNum: 0,
+          delFlag: 0,
+          parentName: "代码试验区",
+          level: 1,
+          children: []
+        },
+      ]
+    },
   ],
 };
 
