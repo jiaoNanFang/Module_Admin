@@ -24,7 +24,8 @@
     name: "ZuoYongYu"
   }
 </script>
-<style lang="stylus" scoped>
+<style lang="stylus" sc
+       oped>
   .warp{
     padding 20px
     .redClass{
